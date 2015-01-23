@@ -70,7 +70,7 @@
 
     function createActionsMenu(actions) {
       var $menu = $('<ul>').addClass('dropdown-menu with-title ' + CLASS.legendItemActions);
-      $menu.append('<li><span class="square"></span><span class="title">-</span></li><li class="divider"></li>');
+      $menu.append('<li><span class="square"></span><span class="title"></span></li><li class="divider"></li>');
       _(actions).forEach(function(action) {
         var $li = $('<li><a>')
             $a = $li.find('a')
@@ -103,7 +103,7 @@
       else {
         return {
           left: parseFloat(rect.attr('x')) + trans[0],
-          top: parseFloat(rect.attr('y')) + trans[1] - $menu.height() - 4,
+          top: parseFloat(rect.attr('y')) + trans[1] - $menu.height() - 14,
           position: 'absolute'
         };
       }

@@ -25,13 +25,13 @@
             }
         ]
     }
-    
+
 
 ###### Example
 
-  http://jsfiddle.net/zh012/jtum168r/2/
-  
+  http://jsfiddle.net/zh012/jtum168r/
+
 ###### Screenshot
 
   ![alt tag](https://raw.githubusercontent.com/zh012/c3js-addons/master/screenshot/legend-actions.png)
-  
+
