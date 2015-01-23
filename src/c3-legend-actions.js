@@ -80,6 +80,11 @@
           .data('name', action.name);
         $menu.append($li);
       });
+      $menu
+        .find('li')
+        .first().css({padding: '3px 20px', margin: '0px'})
+        .find('span.square').css({width: '10px', height: '10px', display: 'inline-block', 'margin-right': '6px'});
+      $menu.find('li>a>i').css('margin-right', 10);
       return $menu;
     }
 

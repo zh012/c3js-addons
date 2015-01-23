@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/c3/0.4.8/c3.css"> </script>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"> </script>
+  <script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"> </script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/c3/0.4.8/c3.js"> </script>
+  <script type="text/javascript" src="../src/c3-legend-actions.js"> </script>
+
+<title>c3 legend actions</title>
+</head>
+<body>
+<div id="chart"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+    c3.generate({
+        data: {
+            columns: [
+                ['data1', 100, 200, 150, 300, 200],
+                ['data2', 400, 500, 250, 700, 300],
+            ]
+        },
+        legend: {
+            position: 'right',
+            actions: [
+                {
+                bsicon: 'edit',
+                name: 'edit',
+                text: 'Edit',
+                callback: function(id){alert('Edit ' + id);}
+                },
+                {
+                bsicon: 'trash',
+                name: 'delete',
+                text: 'Delete',
+                callback: function(id){alert('Delete ' + id);}
+                }
+            ]
+        }
+    });
+
+});
+
+</script>
+</body>
+</html>
